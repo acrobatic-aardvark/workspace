@@ -1,0 +1,2 @@
+INDEX VERSION 1.127+/Users/Clay/Documents/workspace/.metadata/.plugins/org.eclipse.jdt.core
+3184711782.index

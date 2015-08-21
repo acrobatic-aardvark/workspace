@@ -1,0 +1,30 @@
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.util.ArrayList;
+
+public class TestDialog1 extends JFrame{
+	
+	
+	public TestDialog1(){
+		super("Test Dialog");
+		
+		Container c = getContentPane();
+		c.setLayout(null);
+		
+		JLabel myLabel = new JLabel("Test");
+		myLabel.setSize(200,50);
+		myLabel.setLocation(100,100);
+		c.add(myLabel);
+		setVisible(true);
+		}
+	public static void main(String[] args){
+		TestDialog1 mainwnd = new TestDialog1();
+		
+	}
+}
+	
+		
+	

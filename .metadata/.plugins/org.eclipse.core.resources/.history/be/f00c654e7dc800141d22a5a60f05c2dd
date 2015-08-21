@@ -1,0 +1,73 @@
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.util.ArrayList;
+
+public class TestDialog1 extends JFrame{
+	
+	
+	public TestDialog1(){
+		super("Test Dialog");
+		
+		Container c = getContentPane();
+		c.setLayout(null);
+		
+		JLabel myLabel = new JLabel("Customer Name");
+		myLabel.setSize(150,50);
+		myLabel.setLocation(100,100);
+		c.add(myLabel);
+		
+		JLabel years = new JLabel("How many years have you been driving?");
+		years.setSize(350,50);
+		years.setLocation(100,150);
+		c.add(years);
+		
+		JLabel jeep = new JLabel("Do you have a Jeep?");
+		jeep.setSize(200,50);
+		jeep.setLocation(100,200);
+		c.add(jeep);
+		
+		JRadioButton yes = new JRadioButton("Yes");
+		yes.setSize(75,75);
+		yes.setLocation(150,225);
+		c.add(yes);
+		
+		JRadioButton no = new JRadioButton("No");
+		no.setSize(75,75);
+		no.setLocation(200,225);
+		c.add(no);
+		
+		JLabel models = new JLabel("Which models are you interested in?");
+		models.setSize(400,50);
+		models.setLocation(100,300);
+		c.add(models);
+		
+		JCheckBox compass = new JCheckBox("Compass");
+		compass.setSize(100,50);
+		compass.setLocation(150,325);
+		c.add(compass);
+		
+		JCheckBox grand = new JCheckBox("Grand Cherokee");
+		grand.setSize(100,50);
+		grand.setLocation(200,325);
+		c.add(grand);
+		
+		JButton bnAdd = new JButton("Add");
+		bnAdd.setSize(50,50);
+		bnAdd.setLocation(100,600);
+		c.add(bnAdd);
+		
+		
+		
+		setVisible(true);
+		}
+	public static void main(String[] args){
+		TestDialog1 mainwnd = new TestDialog1();
+		
+	}
+}
+	
+		
+	

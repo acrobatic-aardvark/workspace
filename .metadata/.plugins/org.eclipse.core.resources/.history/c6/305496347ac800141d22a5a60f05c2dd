@@ -1,0 +1,43 @@
+import java.awt.event.*;
+
+import javax.swing.*;
+
+import java.awt.*;
+import java.util.ArrayList;
+
+public class TestDialog1 extends JFrame{
+	
+	
+	public TestDialog1(){
+		super("Test Dialog");
+		
+		Container c = getContentPane();
+		c.setLayout(null);
+		
+		JLabel myLabel = new JLabel("Customer Name");
+		myLabel.setSize(100,80);
+		myLabel.setLocation(100,100);
+		c.add(myLabel);
+		
+		JLabel years = new JLabel("How many years have you been driving?");
+		years.setSize(350,50);
+		years.setLocation(100,150);
+		c.add(years);
+		
+		JButton bnAdd = new JButton("Add");
+		bnAdd.setSize(50,50);
+		bnAdd.setLocation(100,600);
+		c.add(bnAdd);
+		
+		
+		
+		setVisible(true);
+		}
+	public static void main(String[] args){
+		TestDialog1 mainwnd = new TestDialog1();
+		
+	}
+}
+	
+		
+	
